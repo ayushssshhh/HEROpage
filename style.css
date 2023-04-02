@@ -1,0 +1,223 @@
+/* universal */
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden ;
+}
+
+.grey{
+    color: rgba(255, 255, 255, 0.772);
+}
+
+.hero{
+    height: 150vh;
+    background-color: #191A19;
+    color: white;
+    border-radius: 20px;
+}
+
+/* navbar  */
+.nav{
+    margin: 0 90px;
+    padding: 10px;
+}
+
+.nav .logo{
+    position: relative;
+    font-family: sans-serif;
+    font-weight: 900;
+    z-index: 0;
+}
+
+.nav .menu{
+    position: relative;
+    width: 100vw;
+    text-align: right;
+    z-index: 2;
+    top: -35px;
+}
+.nav .menu i{
+    font-size: 30px;
+}
+
+.navigation{
+    position: relative;
+    top: -4%;
+    text-align: center;
+}
+ .navigation ul{
+    position: relative;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    
+}
+
+.navigation ul li{
+    display: inline;
+    margin-left: 10%;  
+}
+
+.navigation ul li a{
+    transition: 0.4s;
+    color: white; 
+    text-decoration: none;
+    font-family: monospace;
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.navigation ul li a:hover{
+    letter-spacing: 4px;
+    color: darkgreen;
+}
+
+.navigation button{
+    position: relative;
+    top: 25px;
+    right: 30%;
+    padding: 10px 25px;
+    border-radius: 50px;
+    color: white;
+    border: solid rgb(68, 68, 69) 2px;
+    background-image: linear-gradient(to right , #333633 5% , #191A19);
+    cursor: pointer;
+} 
+
+.navigation button:hover{
+    background-image: linear-gradient(to right , #454a45 55% , #191A19);
+}
+
+.hidden{
+    display: none;
+}
+
+/* title */
+.title{
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.title h1{
+    font-weight: 900;
+}
+
+.title p{
+    margin-top: 30px;
+}
+
+/* background */
+.bg{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.85;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% , 0%);
+    background-image: radial-gradient(rgba(255, 0, 0, 0), #191A19 99%);
+}
+
+.bg img{
+    width: 100vw;
+}
+
+.bg1{
+    position: absolute;
+    z-index: 0;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% , 0%);
+    background-image: radial-gradient(#191a1900, #191A19 99%);
+
+    /* background-color: aliceblue; */
+}
+
+.bg1 img{
+    width: 100vw;
+    opacity: 0;
+}
+
+/* content */
+
+.content button{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-image: linear-gradient(to left , #3b3a3a , #282828 , #3b3a3a );
+    color: white;
+    border: solid rgb(88, 88, 88) 2px;
+    margin: 0 auto;
+    transition: 0.5s;
+    z-index: 2;    
+    margin-bottom: 100px;
+}
+
+.content button:hover{
+    background: #00000016;
+    border: solid rgb(250, 255, 250) 1px;
+    color: #ffffff;
+}
+
+.row .col-sm-4{
+    position: relative;
+    margin-top: 100px;
+    width: 350px;
+    height: 300px;
+    backdrop-filter: blur(4px);
+    border: solid #292c29 0.1px;
+    box-shadow: 15px 20px 30px rgb(0, 0, 0);
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #191a1914;
+    transition: .5s;
+}
+
+.row .col-sm-4:hover{
+    background-color: #191A19;
+    box-shadow: 15px 20px 15px rgb(0, 0, 0);
+}
+
+.row .col-sm-4 h1{
+    display: inline;
+}
+
+.row .col-sm-4 .icon{
+    position: relative;
+    font-size: 80px;
+    color: rgb(8, 88, 5);
+    z-index: 3;
+    left: 30%;
+    top: -5%;
+    transform: translate(-50%, -50%);
+    display: inline;
+    padding: 15px 19px;
+    border-radius: 200%;
+
+}
+
+.row .col-sm-4 p{
+    position: relative;
+    top: -6%;
+    font-size: 12px;
+    width: 250px;
+    height: 130px;
+}
+
+/* media querry */
+@media screen and (max-width: 660px) {
+    .navigation ul li{
+        display: block;
+    }
+
+    .bg{
+        top: 70%;
+    }
+    .bg1{
+        top: 70%;
+    }
+}
